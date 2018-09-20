@@ -1,6 +1,6 @@
 package club.cheapok.demo.payroll.controller;
 
-import club.cheapok.demo.payroll.Employee;
+import club.cheapok.demo.payroll.entity.Employee;
 import club.cheapok.demo.payroll.exceptions.EmployeeNotFoundException;
 import club.cheapok.demo.payroll.repos.EmployeeRepository;
 import org.springframework.web.bind.annotation.*;
@@ -46,6 +46,11 @@ public class EmployeeController {
                     newEmployee.setId(id);
                     return repository.save(newEmployee);
                 });
+    }
+
+    @DeleteMapping("/employees/{id}")
+    void deleteEmployee(@PathVariable Long id) {
+        repository.deleteById(id);
     }
 
 

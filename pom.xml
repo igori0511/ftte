@@ -24,6 +24,7 @@
     </build>
     <modules>
         <module>spring-starters</module>
+        <module>learn-spring-starter</module>
     </modules>
 
 </project>

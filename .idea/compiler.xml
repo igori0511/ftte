@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="learn-restservices-jpa-hw2" />
         <module name="learn-spring-web-hw" />
+        <module name="learnspringstarter" />
         <module name="springstarters" />
       </profile>
     </annotationProcessing>
